@@ -13,6 +13,12 @@ IPhone meggings live-edge coloring book mlkshk. Keffiyeh salvia kickstarter, cor
 
 Meditation edison bulb pork belly, meh chartreuse kale chips vinyl 90's jean shorts mixtape. Artisan venmo kombucha, tacos gluten-free DIY gastropub. Vexillologist selfies coloring book thundercats leggings blog air plant truffaut jean shorts mlkshk poke humblebrag cold-pressed farm-to-table williamsburg. Cray slow-carb cardigan put a bird on it wolf you probably haven't heard of them vape meditation. Enamel pin biodiesel sriracha, poke street art fingerstache hot chicken hella plaid hexagon.
 
+<info-box>
+  <template #info-box>
+    This is a vue component inside markdown using slots
+  </template>
+</info-box>
+
 ## This is another section
 
 I'm baby green juice vinyl bespoke, church-key tumeric shabby chic wayfarers quinoa try-hard. Everyday carry you probably haven't heard of them selvage echo park snackwave, art party yr coloring book mixtape deep v humblebrag tacos sustainable. Mlkshk mumblecore blog intelligentsia. Tbh 90's health goth deep v marfa. Whatever butcher copper mug, tousled VHS selfies cold-pressed lyft palo santo. Marfa small batch disrupt, tofu vaporware cred direct trade iceland gochujang unicorn wolf chambray cronut tumeric. Mlkshk readymade lyft, coloring book copper mug sustainable irony kinfolk kombucha.

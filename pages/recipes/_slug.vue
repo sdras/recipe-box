@@ -1,12 +1,22 @@
 <template>
-  <article>
-    <h1 class="recipe-title">{{ recipe.title }}</h1>
-    <p>{{ recipe.description }}</p>
-    <img :src="`../${recipe.img}`" :alt="recipe.alt" class="recipe-img" />
-    <p>Article last updated: {{ formatDate(recipe.updatedAt) }}</p>
+  <main>
+    <nav>
+      <ul>
+        <li v-for="link of recipe.toc" :key="link.id">
+          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+        </li>
+      </ul>
+    </nav>
 
-    <nuxt-content :document="recipe" />
-  </article>
+    <article>
+      <h1 class="recipe-title">{{ recipe.title }}</h1>
+      <p>{{ recipe.description }}</p>
+      <img :src="`../${recipe.img}`" :alt="recipe.alt" class="recipe-img" />
+      <p>Article last updated: {{ formatDate(recipe.updatedAt) }}</p>
+
+      <nuxt-content :document="recipe" />
+    </article>
+  </main>
 </template>
 
 <script>
