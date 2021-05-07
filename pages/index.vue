@@ -1,5 +1,7 @@
 <template>
   <main>
+    <base-hero />
+
     <h1>Recipes</h1>
     <BaseSearchInput />
     <section v-for="recipe of recipes" :key="recipe.slug">
