@@ -1,6 +1,7 @@
 <template>
   <main>
     <h1>Recipes</h1>
+    <BaseSearchInput />
     <section v-for="recipe of recipes" :key="recipe.slug">
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: recipe.slug } }">
         <img :src="recipe.img" class="recipe-list-img" />
