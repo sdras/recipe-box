@@ -15,6 +15,8 @@
       <p>Article last updated: {{ formatDate(recipe.updatedAt) }}</p>
 
       <nuxt-content :document="recipe" />
+
+      <base-prev-next :prev="prev" :next="next" />
     </article>
   </main>
 </template>
@@ -24,7 +26,13 @@ export default {
   async asyncData({ $content, params }) {
     const recipe = await $content("recipes", params.slug).fetch();
 
-    return { recipe };
+    const [prev, next] = await $content("recipes")
+      .only(["title", "slug"])
+      .sortBy("createdAt", "asc")
+      .surround(params.slug)
+      .fetch();
+
+    return { recipe, prev, next };
   },
   methods: {
     formatDate(date) {
@@ -42,6 +50,10 @@ export default {
 
 h1.recipe-title {
   font-size: 45px;
+}
+
+.nuxt-content {
+  width: 50vw;
 }
 
 .nuxt-content h1 {
