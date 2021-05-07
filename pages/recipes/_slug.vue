@@ -12,7 +12,8 @@
       <h1 class="recipe-title">{{ recipe.title }}</h1>
       <p>{{ recipe.description }}</p>
       <img :src="`../${recipe.img}`" :alt="recipe.alt" class="recipe-img" />
-      <p>Article last updated: {{ formatDate(recipe.updatedAt) }}</p>
+      <p>Recipe last updated: {{ formatDate(recipe.updatedAt) }}</p>
+      <author :author="recipe.author" />
 
       <nuxt-content :document="recipe" />
 

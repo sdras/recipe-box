@@ -3,6 +3,10 @@ title: First Recipe
 description: Doin something
 img: cucumbersoup.png
 alt: pretty greenery
+author:
+  name: Sarah
+  bio: Lala head
+  image: https://pbs.twimg.com/profile_images/1281071936605323266/wc1KRZLK_400x400.jpg
 ---
 
 ## This is a section
