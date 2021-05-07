@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1>{{ recipe.title }}</h1>
+    <h1 class="recipe-title">{{ recipe.title }}</h1>
     <p>{{ recipe.description }}</p>
     <img :src="`../${recipe.img}`" :alt="recipe.alt" class="recipe-img" />
     <p>Article last updated: {{ formatDate(recipe.updatedAt) }}</p>
@@ -25,8 +25,36 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .recipe-img {
   width: 300px;
+}
+
+h1.recipe-title {
+  font-size: 45px;
+}
+
+.nuxt-content h1 {
+  font-size: 28px;
+}
+
+.nuxt-content h2 {
+  font-size: 28px;
+}
+
+.nuxt-content h3 {
+  font-size: 22px;
+}
+
+.nuxt-content p {
+  margin-bottom: 20px;
+}
+
+.icon.icon-link {
+  background-image: url("~assets/hashtag2.svg");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
 }
 </style>
