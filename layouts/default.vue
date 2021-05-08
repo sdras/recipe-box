@@ -76,4 +76,14 @@ a:active {
   text-decoration: none;
   color: black;
 }
+
+section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+section div {
+  max-width: 1000px;
+}
 </style>

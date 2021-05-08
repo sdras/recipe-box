@@ -2,14 +2,38 @@
   <div
     class="masthead"
     role="img"
-    aria-label="light blue background, photo of ingredients"
+    :aria-label="alt"
+    :style="`background: url(/${img}) no-repeat center center`"
   >
     <h1>
-      The Healthy Dev
+      {{ title }}
     </h1>
-    <p>Quick, delicious, healthy meals to keep your brain active.</p>
+    <p v-if="subtitle">{{ subtitle }}</p>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    img: {
+      type: String,
+      default: "brooke-lark1.jpeg"
+    },
+    alt: {
+      type: String,
+      default: "light blue background, photo of ingredients"
+    },
+    title: {
+      type: String,
+      default: "The Healthy Dev"
+    },
+    subtitle: {
+      type: String,
+      default: "Quick, delicious, healthy meals to keep your brain active."
+    }
+  }
+};
+</script>
 
 <style scoped>
 .masthead {
@@ -22,7 +46,6 @@
   height: 50vh;
   overflow: hidden;
   background-size: cover !important;
-  background: url(~/assets/brooke-lark1.jpeg) no-repeat center center scroll;
   box-shadow: 0 20px 25px 20px #e6eff1;
 }
 

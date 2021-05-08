@@ -74,16 +74,6 @@ export default {
   margin: 10px 0 20px;
 }
 
-section {
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-section div {
-  max-width: 1000px;
-}
-
 .recipe-piece {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
