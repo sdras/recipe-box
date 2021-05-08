@@ -1,6 +1,6 @@
 ---
 title: Shaved Brussels Sprout and Snap Peas Salad
-description: A crisp salad great as a side or a lunch main
+description: A crisp salad great as a side or a lunch main.
 meal: Lunch
 img: brussels.jpg
 alt: brussels sprout salad

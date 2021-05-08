@@ -14,15 +14,20 @@
               :style="`background: url(/${recipe.img}) no-repeat center center`"
             ></div>
           </NuxtLink>
+
           <div class="recipe-content">
-            <p class="details"><IconTime />{{ recipe.time }} minutes</p>
+            <p class="details">
+              <IconTime />{{ recipe.time }} minutes
+              <span class="rating"><StarRating :rating="recipe.rating"/></span>
+            </p>
+
             <NuxtLink
               :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
               ><h3>{{ recipe.title }}</h3></NuxtLink
             >
-            <p class="description">{{ recipe.description }}</p>
+
             <author :author="recipe.author" />
-            <p>{{ recipe.rating }}</p>
+            <p class="description">{{ recipe.description }}</p>
           </div>
         </div>
       </div>
@@ -34,7 +39,17 @@
 export default {
   async asyncData({ $content, params }) {
     const recipes = await $content("recipes")
-      .only(["title", "description", "img", "slug", "author", "time", "rating"])
+      .only([
+        "title",
+        "description",
+        "img",
+        "slug",
+        "author",
+        "time",
+        "rating",
+        "tags",
+        "meal"
+      ])
       .sortBy("createdAt", "desc")
       .fetch();
 
@@ -77,7 +92,7 @@ section div {
 }
 
 h3 {
-  padding: 5px 0 10px;
+  padding: 5px 0 0;
 }
 
 .recipe-content {
@@ -85,10 +100,14 @@ h3 {
 }
 
 .description {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .details {
   font-size: 80%;
+}
+
+.rating {
+  float: right;
 }
 </style>

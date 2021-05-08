@@ -1,6 +1,6 @@
 ---
-title: Shrimp, sausage, Red Pepper Pasta
-description: A hearty blend of Italian flavors
+title: Spicy Shrimp, Sausage, and Red Pepper Pasta
+description: A hearty blend of Italian flavors, warming for cool days.
 meal: Dinner
 img: shrimppasta.jpg
 alt: shrimp pasta
@@ -26,7 +26,7 @@ author:
 - 1/2 jar artichoke
 - 2 chicken apple sausages
 - 1 tsp red pepper
-- 1 tsp hot sauce
+- 2 tbsp hot sauce
 - 6 threads saffron
 - 4 cloves garlic
 - 1/2 pound shrimp

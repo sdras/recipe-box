@@ -15,7 +15,7 @@
   text-align: right;
   padding-right: 10vmin;
   width: 100%;
-  height: 60vh; /* if you don't want it to take up the full screen, reduce this number */
+  height: 50vh;
   overflow: hidden;
   background-size: cover !important;
   background: url(~/assets/brooke-lark1.jpeg) no-repeat center center scroll;
