@@ -27,9 +27,8 @@
               :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
               ><h3>{{ recipe.title }}</h3></NuxtLink
             >
-
+            <tag-group :tags="recipe.tags"></tag-group>
             <p class="description">{{ recipe.description }}</p>
-            <author :author="recipe.author" />
           </div>
         </div>
       </div>
@@ -38,7 +37,9 @@
 </template>
 
 <script>
+import TagGroup from "../components/global/TagGroup.vue";
 export default {
+  components: { TagGroup },
   async asyncData({ $content, params }) {
     const recipes = await $content("recipes")
       .only([
@@ -46,13 +47,12 @@ export default {
         "description",
         "img",
         "slug",
-        "author",
         "time",
         "rating",
         "tags",
-        "meal"
+        "order"
       ])
-      .sortBy("title", "desc")
+      .sortBy("order")
       .fetch();
 
     return {
@@ -64,10 +64,14 @@ export default {
 
 <style scoped>
 .recipe-list-img {
-  height: 250px;
+  height: 200px;
   border-radius: 5px;
   background-size: cover !important;
   position: relative;
+}
+
+.tag-group {
+  margin: 10px 0 20px;
 }
 
 section {

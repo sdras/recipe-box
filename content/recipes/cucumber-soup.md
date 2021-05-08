@@ -2,13 +2,14 @@
 title: Chilled Cucumber Soup
 description: This soup is a great compliment to egg or seafood dishes. The cool cucumber is great matched with the sharpness of the garlic, onion, and jalapeño, and it's pretty easy to make if you have a blender
 meal: Dinner
-img: cucumbersoup.png
+img: cucumbersoup2.jpg
 tags:
   - Vegetables
   - Soup
   - Side
 time: 10
 rating: 5
+order: 4
 author:
   name: Sarah
   image: https://pbs.twimg.com/profile_images/1281071936605323266/wc1KRZLK_400x400.jpg

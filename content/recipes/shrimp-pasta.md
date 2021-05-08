@@ -6,11 +6,10 @@ img: shrimppasta.jpg
 tags:
   - Shrimp
   - Pasta
-  - Artichokes
-  - Red Pepper
-  - Sausage
+  - Vegetables
 time: 25
 rating: 5
+order: 1
 author:
   name: Sarah
   image: https://pbs.twimg.com/profile_images/1281071936605323266/wc1KRZLK_400x400.jpg

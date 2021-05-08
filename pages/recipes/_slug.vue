@@ -8,7 +8,8 @@
         <div class="rating"><StarRating :rating="recipe.rating" /></div>
         <author :author="recipe.author" class="details-author" />
       </div>
-      <p>{{ recipe.description }}</p>
+      <p class="description">{{ recipe.description }}</p>
+      <tag-group :tags="recipe.tags"></tag-group>
     </div>
 
     <div
@@ -127,7 +128,9 @@ article {
   grid-area: 2 / 2 / 3 / 4;
 }
 
-/*old */
+.description {
+  margin-bottom: 20px;
+}
 
 h1.recipe-title {
   font-size: 45px;
