@@ -50,7 +50,7 @@ export default {
         "tags",
         "meal"
       ])
-      .sortBy("createdAt", "desc")
+      .sortBy("updatedAt", "des")
       .fetch();
 
     return {

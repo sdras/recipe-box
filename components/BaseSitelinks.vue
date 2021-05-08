@@ -1,10 +1,7 @@
 <template>
   <ul class="site-links">
     <li>
-      <nuxt-link to="/">Authors</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/">Contact</nuxt-link>
+      <nuxt-link to="/about">About</nuxt-link>
     </li>
     <li>
       <a href="https://github.com/sdras/recipe-box" target="_blank">Repo</a>
