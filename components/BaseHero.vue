@@ -19,6 +19,7 @@
   overflow: hidden;
   background-size: cover !important;
   background: url(~/assets/brooke-lark1.jpeg) no-repeat center center scroll;
+  box-shadow: 0 20px 25px 20px #e6eff1;
 }
 
 h1 {

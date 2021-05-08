@@ -3,6 +3,8 @@ title: Second Recipe
 description: Lalala
 img: cucumbersoup.png
 alt: pretty greenery
+time: 15
+rating: 5
 author:
   name: Sarah
   bio: Lala head

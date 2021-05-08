@@ -4,7 +4,7 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="Search Recipes"
+      id="searchbar"
     />
     <ul v-if="recipes.length">
       <li v-for="recipe of recipes" :key="recipe.slug">
@@ -38,3 +38,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+</style>
