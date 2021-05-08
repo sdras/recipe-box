@@ -1,6 +1,6 @@
 ---
 title: Spicy Shrimp, Sausage, and Red Pepper Pasta
-description: A hearty blend of Italian flavors, warming for cool days.
+description: A hearty blend of Italian flavors, this dish is complex without being hard to make. The proportions aren't an exact science, so add and remove ingredients as you see fit and based on what's ripe.
 meal: Dinner
 img: shrimppasta.jpg
 alt: shrimp pasta

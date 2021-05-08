@@ -9,7 +9,7 @@ tags:
   - Sausage
   - Vegetables
 time: 15
-rating: 5
+rating: 4
 author:
   name: Sarah
   image: https://pbs.twimg.com/profile_images/1281071936605323266/wc1KRZLK_400x400.jpg
@@ -23,7 +23,7 @@ author:
 - 8 oz mushrooms, broken or cut into quarter size pieces See Note
 - ½ cup grated Gruyere cheese (any cheese will work)
 - 1-2 tbsp. butter
-- fresh thyme optional
+- fresh thyme
 - Salt & pepper
 
 ## Instructions

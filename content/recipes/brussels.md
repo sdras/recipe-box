@@ -1,6 +1,6 @@
 ---
 title: Shaved Brussels Sprout and Snap Peas Salad
-description: A crisp salad great as a side or a lunch main.
+description: This salad is not a star on it's own but is light and crisp and is a nice compliment to a rich dish. Perfect for when you're tired of the same old salad.
 meal: Lunch
 img: brussels.jpg
 alt: brussels sprout salad
@@ -18,7 +18,7 @@ author:
 ## Ingredients
 
 - Sugar snap peas, trimmed and diagonally cut
-- 1lb brussel sprouts, shaved
+- 1lb brussels sprouts, shaved
 - Goat or feta cheese crumbles
 - Salt to taste
 - 1 tbsp olive oil

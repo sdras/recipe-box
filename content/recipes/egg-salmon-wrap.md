@@ -1,6 +1,6 @@
 ---
 title: Soft Boiled Egg, Smoked Salmon and Dill wrap
-description: A light wrap full of omega 3 fatty acid to provide fuel through the day.
+description: A light wrap full of omega 3 fatty acid to provide fuel through the day. The flavors are delicious together and the onion and cucumber offer a nice crisp contrast to the texture of the egg and salmon.
 meal: Breakfast
 img: salmonwrap.png
 alt: salmon wrap
