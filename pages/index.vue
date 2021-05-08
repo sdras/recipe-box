@@ -12,6 +12,8 @@
             <div
               class="recipe-list-img"
               :style="`background: url(/${recipe.img}) no-repeat center center`"
+              :aria-label="recipe.title"
+              role="img"
             ></div>
           </NuxtLink>
 

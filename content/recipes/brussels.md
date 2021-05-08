@@ -3,7 +3,6 @@ title: Shaved Brussels Sprout and Snap Peas Salad
 description: This salad is not a star on it's own but is light and crisp and is a nice compliment to a rich dish. Perfect for when you're tired of the same old salad.
 meal: Lunch
 img: brussels.jpg
-alt: brussels sprout salad
 tags:
   - Vegetables
   - Salad

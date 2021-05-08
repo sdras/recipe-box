@@ -14,7 +14,7 @@
     <div
       class="photo"
       :style="`background: url(/${recipe.img}) no-repeat center center`"
-      :alt="recipe.alt"
+      :alt="recipe.title"
     ></div>
 
     <nav class="internal-nav">

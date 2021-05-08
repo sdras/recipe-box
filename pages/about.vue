@@ -27,6 +27,11 @@
             >Unsplash</a
           >
         </li>
+        <li>
+          Crabcake photo by
+          <a href="https://www.flickr.com/photos/dinesarasota/">Larry Hoffman</a
+          >.
+        </li>
       </ul>
     </section>
   </div>

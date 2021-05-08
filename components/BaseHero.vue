@@ -1,5 +1,9 @@
 <template>
-  <div class="masthead" role="img" aria-label="Image Description">
+  <div
+    class="masthead"
+    role="img"
+    aria-label="light blue background, photo of ingredients"
+  >
     <h1>
       The Healthy Dev
     </h1>
