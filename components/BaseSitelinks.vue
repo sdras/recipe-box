@@ -6,6 +6,9 @@
     <li>
       <nuxt-link to="/">Contact</nuxt-link>
     </li>
+    <li>
+      <a href="https://github.com/sdras/recipe-box" target="_blank">Repo</a>
+    </li>
   </ul>
 </template>
 

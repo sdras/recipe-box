@@ -26,8 +26,8 @@
               ><h3>{{ recipe.title }}</h3></NuxtLink
             >
 
-            <author :author="recipe.author" />
             <p class="description">{{ recipe.description }}</p>
+            <author :author="recipe.author" />
           </div>
         </div>
       </div>
