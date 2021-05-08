@@ -2,17 +2,23 @@
   <main>
     <base-hero />
 
-    <h1>Recipes</h1>
     <BaseSearchInput />
-    <section v-for="recipe of recipes" :key="recipe.slug">
-      <NuxtLink :to="{ name: 'blog-slug', params: { slug: recipe.slug } }">
-        <img :src="recipe.img" class="recipe-list-img" />
-        <div>
-          <h2>{{ recipe.title }}</h2>
-          <p>by {{ recipe.author.name }}</p>
-          <p>{{ recipe.description }}</p>
+
+    <section>
+      <div class="recipe-piece">
+        <div v-for="recipe of recipes" :key="recipe.slug">
+          <NuxtLink
+            :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
+          >
+            <img :src="recipe.img" class="recipe-list-img" />
+            <div>
+              <h2>{{ recipe.title }}</h2>
+              <p>by {{ recipe.author.name }}</p>
+              <p>{{ recipe.description }}</p>
+            </div>
+          </NuxtLink>
         </div>
-      </NuxtLink>
+      </div>
     </section>
   </main>
 </template>
@@ -34,6 +40,23 @@ export default {
 
 <style>
 .recipe-list-img {
-  width: 200px;
+  width: 100%;
+}
+
+section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+section div {
+  max-width: 1000px;
+}
+
+.recipe-piece {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
 }
 </style>

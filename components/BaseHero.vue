@@ -1,10 +1,10 @@
 <template>
-  <section class="masthead" role="img" aria-label="Image Description">
+  <div class="masthead" role="img" aria-label="Image Description">
     <h1>
       The Healthy Dev
     </h1>
     <p>Quick, delicious, healthy meals to keep your brain active.</p>
-  </section>
+  </div>
 </template>
 
 <style scoped>
