@@ -12,7 +12,7 @@ export default {};
 <style scoped>
 .bar {
   width: 1100px;
-  padding: 30px 60px;
+  padding: 30px 50px;
   display: table;
   margin: 0 auto;
   z-index: 100;

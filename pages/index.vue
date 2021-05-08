@@ -9,7 +9,10 @@
           <NuxtLink
             :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
           >
-            <img :src="recipe.img" class="recipe-list-img" />
+            <div
+              class="recipe-list-img"
+              :style="`background: url(/${recipe.img}) no-repeat center center`"
+            ></div>
           </NuxtLink>
           <div>
             <NuxtLink
@@ -44,7 +47,10 @@ export default {
 
 <style>
 .recipe-list-img {
-  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  background-size: cover !important;
+  position: relative;
 }
 
 section {
