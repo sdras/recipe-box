@@ -8,7 +8,7 @@ tags:
   - Salad
   - Sides
 time: 5
-rating: 3
+rating: 2
 order: 6
 author:
   name: Sarah

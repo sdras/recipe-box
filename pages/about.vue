@@ -49,6 +49,24 @@
               >Larry Hoffman</a
             >.
           </li>
+          <li>
+            Mushroom photo by
+            <a
+              href="https://unsplash.com/@sebas_m04?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Sébastien Marchand</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/mushrooms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </li>
+          <li>
+            Chimichurri photo by
+            <a href="https://www.flickr.com/photos/polkaroo/"
+              >Isabelle Boucher</a
+            >
+          </li>
         </ul>
       </div>
     </section>

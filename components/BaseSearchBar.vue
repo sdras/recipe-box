@@ -1,24 +1,38 @@
 <template>
-  <div class="bar">
+  <div
+    class="bar"
+    :style="
+      `background: ${bkColor}; margin-top: ${modifiedMargin ? '-40px' : '0'};`
+    "
+  >
     <label for="searchbar">Search for your ideal recipe</label>
     <base-search-input />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    bkColor: {
+      type: String,
+      default: "white"
+    },
+    modifiedMargin: {
+      type: Boolean,
+      default: true
+    }
+  }
+};
 </script>
 
 <style scoped>
 .bar {
-  width: 1100px;
+  max-width: 1100px;
   padding: 30px 50px;
   display: table;
   margin: 0 auto;
   z-index: 100;
   position: relative;
-  background: white;
-  margin-top: -40px;
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1);
   display: flex;
 }
