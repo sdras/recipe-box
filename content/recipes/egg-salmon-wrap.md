@@ -15,14 +15,6 @@ author:
   image: https://pbs.twimg.com/profile_images/1281071936605323266/wc1KRZLK_400x400.jpg
 ---
 
-# Soft boiled egg, smoked salmon and dill wrap
-
-Created: May 4, 2021
-
-Photo: CleanShot_2021-05-04_at_13.08.442x.png
-Rating: ⭐️⭐️⭐️⭐️⭐️
-Tags: Eggs, Smoked Salmon, Wraps
-
 ## Ingredients
 
 - 2 Eggs
