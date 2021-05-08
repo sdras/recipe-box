@@ -2,6 +2,7 @@
   <div>
     <BaseNav />
     <Nuxt />
+    <BaseFooter />
   </div>
 </template>
 

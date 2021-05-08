@@ -1,11 +1,11 @@
 <template>
-  <div class="flex justify-between">
+  <div class="prevnext">
     <NuxtLink
       v-if="prev"
       :to="{ name: 'recipes-slug', params: { slug: prev.slug } }"
       class="text-primary font-bold hover:underline"
     >
-      {{ prev.title }}
+      <IconArrow style="transform:scaleX(-1)" /> Previous Recipe
     </NuxtLink>
     <span v-else>&nbsp;</span>
     <NuxtLink
@@ -13,7 +13,7 @@
       :to="{ name: 'recipes-slug', params: { slug: next.slug } }"
       class="font-bold hover:underline"
     >
-      {{ next.title }}
+      Next Recipe <IconArrow />
     </NuxtLink>
     <span v-else>&nbsp;</span>
   </div>
@@ -33,3 +33,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.prevnext {
+  margin: 20px 0 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+</style>

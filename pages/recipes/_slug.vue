@@ -136,7 +136,8 @@ h1.recipe-title {
 .nuxt-content {
   width: 50vw;
   margin-top: -20px;
-  margin-bottom: 100px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
 }
 
 .nuxt-content h1 {
