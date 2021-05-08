@@ -1,5 +1,6 @@
 <template>
   <svg
+    class="rating"
     width="100"
     height="20"
     viewBox="0 -20 200 120"

@@ -1,9 +1,13 @@
 <template>
   <main class="single">
     <div class="titlearea">
-      <p>{{ formatDate(recipe.createdAt) }}</p>
+      <p class="date">{{ formatDate(recipe.createdAt) }}</p>
       <h1 class="recipe-title">{{ recipe.title }}</h1>
-      <author :author="recipe.author" />
+      <div class="single-details">
+        <div class="time"><IconTime />{{ recipe.time }} minutes</div>
+        <div class="rating"><StarRating :rating="recipe.rating" /></div>
+        <author :author="recipe.author" class="details-author" />
+      </div>
       <p>{{ recipe.description }}</p>
     </div>
 
@@ -14,10 +18,10 @@
     ></div>
 
     <nav class="internal-nav">
-      <h4>Article Sections</h4>
+      <h4>Recipe Sections</h4>
       <ul>
         <li v-for="link of recipe.toc" :key="link.id">
-          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+          <NuxtLink :to="`#${link.id}`"><IconLink /> {{ link.text }}</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -69,9 +73,32 @@ main.single {
   padding: 100px 100px 0 0;
 }
 
+.date {
+  text-transform: uppercase;
+}
+
 .photo {
   grid-area: 1 / 3 / 2 / 4;
-  background-size: cover;
+  background-size: cover !important;
+}
+
+.single-details {
+  margin: 20px 0;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 14px;
+}
+
+.details-author {
+  margin-top: -10px;
+}
+
+.rating {
+  margin-left: -10px;
 }
 
 .internal-nav {
@@ -89,7 +116,7 @@ main.single {
   border-top: 1px solid grey;
   padding: 8px;
   list-style: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 .internal-nav a {
   text-decoration: none;
@@ -129,6 +156,9 @@ h1.recipe-title {
 
 .nuxt-content p {
   margin-bottom: 20px;
+}
+.link {
+  margin-right: 5px;
 }
 
 .icon.icon-link {

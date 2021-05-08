@@ -6,7 +6,7 @@
       autocomplete="off"
       id="searchbar"
     />
-    <ul v-if="recipes.length">
+    <ul v-if="recipes.length" class="search-results">
       <li v-for="recipe of recipes" :key="recipe.slug">
         <NuxtLink :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }">
           {{ recipe.title }}
@@ -44,5 +44,10 @@ input {
   padding: 5px 10px;
   border: 1px solid #ccc;
   width: 300px;
+}
+
+.search-results {
+  padding: 20px;
+  line-height: 1.4;
 }
 </style>

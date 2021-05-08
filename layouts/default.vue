@@ -67,4 +67,12 @@ button:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
 }
+
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
 </style>

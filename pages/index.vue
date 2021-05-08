@@ -60,7 +60,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .recipe-list-img {
   height: 250px;
   border-radius: 5px;
