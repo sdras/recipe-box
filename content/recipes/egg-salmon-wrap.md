@@ -1,5 +1,5 @@
 ---
-title: Soft boiled egg, smoked salmon and dill wrap
+title: Soft Boiled Egg, Smoked Salmon and Dill wrap
 description: A light wrap full of omega 3s to provide fuel through the day.
 meal: Breakfast
 img: salmonwrap.png

@@ -14,15 +14,15 @@
               :style="`background: url(/${recipe.img}) no-repeat center center`"
             ></div>
           </NuxtLink>
-          <div>
+          <div class="recipe-content">
+            <p class="details"><IconTime />{{ recipe.time }} minutes</p>
             <NuxtLink
               :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
               ><h3>{{ recipe.title }}</h3></NuxtLink
             >
-            <p>by {{ recipe.author.name }}</p>
-            <p>{{ recipe.time }} Minutes</p>
+            <p class="description">{{ recipe.description }}</p>
+            <author :author="recipe.author" />
             <p>{{ recipe.rating }}</p>
-            <p>{{ recipe.description }}</p>
           </div>
         </div>
       </div>
@@ -74,5 +74,21 @@ section div {
 .recipe-piece a {
   color: black;
   text-decoration: none;
+}
+
+h3 {
+  padding: 5px 0 10px;
+}
+
+.recipe-content {
+  padding: 10px 3px 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 80%;
 }
 </style>
