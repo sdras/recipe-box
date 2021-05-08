@@ -1,6 +1,20 @@
 <template>
-  <main>
-    <nav>
+  <main class="single">
+    <div class="titlearea">
+      <p>{{ formatDate(recipe.createdAt) }}</p>
+      <h1 class="recipe-title">{{ recipe.title }}</h1>
+      <author :author="recipe.author" />
+      <p>{{ recipe.description }}</p>
+    </div>
+
+    <div
+      class="photo"
+      :style="`background: url(/${recipe.img}) no-repeat center center`"
+      :alt="recipe.alt"
+    ></div>
+
+    <nav class="internal-nav">
+      <h4>Article Sections</h4>
       <ul>
         <li v-for="link of recipe.toc" :key="link.id">
           <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
@@ -9,12 +23,6 @@
     </nav>
 
     <article>
-      <h1 class="recipe-title">{{ recipe.title }}</h1>
-      <p>{{ recipe.description }}</p>
-      <img :src="`../${recipe.img}`" :alt="recipe.alt" class="recipe-img" />
-      <p>Recipe last updated: {{ formatDate(recipe.updatedAt) }}</p>
-      <author :author="recipe.author" />
-
       <nuxt-content :document="recipe" />
 
       <base-prev-next :prev="prev" :next="next" />
@@ -45,9 +53,54 @@ export default {
 </script>
 
 <style>
-.recipe-img {
-  width: 300px;
+/* new */
+main.single {
+  width: calc(100vw - 8vw);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 3fr;
+  grid-template-rows: 500px 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 60px;
+  margin-left: 8vw;
 }
+
+.titlearea {
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 100px 100px 0 0;
+}
+
+.photo {
+  grid-area: 1 / 3 / 2 / 4;
+  background-size: cover;
+}
+
+.internal-nav {
+  grid-area: 2 / 1 / 3 / 2;
+  border-top: 4px solid black;
+  padding-top: 10px;
+}
+.internal-nav h4 {
+  padding: 8px;
+}
+.internal-nav ul {
+  padding-left: 0;
+}
+.internal-nav li {
+  border-top: 1px solid grey;
+  padding: 8px;
+  list-style: none;
+  font-size: 14px;
+}
+.internal-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+article {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+/*old */
 
 h1.recipe-title {
   font-size: 45px;
@@ -55,18 +108,23 @@ h1.recipe-title {
 
 .nuxt-content {
   width: 50vw;
+  margin-top: -20px;
+  margin-bottom: 100px;
 }
 
 .nuxt-content h1 {
   font-size: 28px;
+  margin: 20px 0;
 }
 
 .nuxt-content h2 {
   font-size: 28px;
+  margin: 15px 0;
 }
 
 .nuxt-content h3 {
   font-size: 22px;
+  margin: 10px 0;
 }
 
 .nuxt-content p {
