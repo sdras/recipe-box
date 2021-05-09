@@ -165,6 +165,10 @@ h1.recipe-title {
   margin-right: 5px;
 }
 
+.nuxt-content li {
+  margin-bottom: 5px;
+}
+
 .icon.icon-link {
   background-image: url("~assets/hashtag2.svg");
   display: inline-block;

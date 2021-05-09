@@ -10,10 +10,15 @@
       <div>
         <h2>What is it?</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus autem corporis deleniti qui reiciendis est saepe harum,
-          maxime nihil nostrum neque veritatis hic ea enim explicabo suscipit
-          quam perspiciatis sed?
+          I kicked off this blog for myself, really, to hold some of the things
+          I was cooking and make sure I didn't forget what I did. Anyone is
+          welcome to use these recipes though.
+        </p>
+        <p>
+          You may notice that I bring up fresh ingredients a lot- you'll find
+          that the difference between a good and a poor outcome with these in
+          particular because they rely so heavily on vegetables, herbs, and
+          spices.
         </p>
       </div>
       <div>

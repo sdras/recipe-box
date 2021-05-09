@@ -1,13 +1,10 @@
 <template>
   <footer>
-    <BaseSearchBar :modifiedMargin="false" :bkColor="'black'" />
-    <BaseSiteLinks />
+    <BaseNav :navBreak="true" />
   </footer>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <style scoped>
 footer {
@@ -15,9 +12,23 @@ footer {
   background: black;
   padding: 30px 0;
   color: white;
-  height: 300px;
+  height: 250px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .logo {
+  margin-left: -15px;
 }
 </style>

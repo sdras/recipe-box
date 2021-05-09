@@ -86,4 +86,8 @@ section {
 section div {
   max-width: 1000px;
 }
+
+p {
+  margin-bottom: 20px;
+}
 </style>
