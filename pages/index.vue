@@ -82,6 +82,18 @@ export default {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 900px) {
+  .recipe-piece {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .recipe-piece {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .recipe-piece a {
   color: black;
   text-decoration: none;
