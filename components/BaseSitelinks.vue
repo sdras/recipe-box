@@ -1,13 +1,7 @@
 <template>
   <ul class="site-links">
     <li>
-      <nuxt-link exact to="/">Recipes</nuxt-link>
-    </li>
-    <li>
       <nuxt-link to="/about">About</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/ingredients">Base Ingredients</nuxt-link>
     </li>
     <li>
       <a href="https://github.com/sdras/recipe-box" target="_blank"
