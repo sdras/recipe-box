@@ -8,7 +8,7 @@
     <h1>
       {{ title }}
     </h1>
-    <p v-if="subtitle">{{ subtitle }}</p>
+    <p v-if="subtitle" class="subtitle">{{ subtitle }}</p>
   </div>
 </template>
 
@@ -58,5 +58,12 @@ h1 {
 
 p {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .subtitle {
+    text-align: right;
+    max-width: 500px;
+  }
 }
 </style>

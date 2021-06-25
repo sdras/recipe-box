@@ -1,11 +1,11 @@
 <template>
   <div>
-    <base-hero
+    <BaseHero
       :img="'table.jpg'"
       :alt="'table against white'"
       :title="'About'"
       :subtitle="'All about the Healthy Dev'"
-    ></base-hero>
+    />
     <section>
       <div>
         <h2>What is it?</h2>

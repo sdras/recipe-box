@@ -1,7 +1,7 @@
 <template>
   <main>
-    <base-hero />
-    <base-search-bar />
+    <BaseHero />
+    <BaseSearchBar />
 
     <section>
       <div class="recipe-piece">
@@ -38,6 +38,7 @@
 
 <script>
 import TagGroup from "../components/global/TagGroup.vue";
+
 export default {
   components: { TagGroup },
   async asyncData({ $content, params }) {

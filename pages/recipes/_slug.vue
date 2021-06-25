@@ -9,7 +9,7 @@
         <author :author="recipe.author" class="details-author" />
       </div>
       <p class="description">{{ recipe.description }}</p>
-      <tag-group :tags="recipe.tags"></tag-group>
+      <TagGroup :tags="recipe.tags" />
     </div>
 
     <div
@@ -28,9 +28,9 @@
     </nav>
 
     <article>
-      <nuxt-content :document="recipe" />
+      <NuxtContent :document="recipe" />
 
-      <base-prev-next :prev="prev" :next="next" />
+      <BasePrevNext :prev="prev" :next="next" />
     </article>
   </main>
 </template>

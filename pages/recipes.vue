@@ -1,6 +1,6 @@
 <template>
   <main>
-    <base-search-bar />
+    <BaseSearchBar />
 
     <section>
       <div class="recipe-piece">
@@ -26,7 +26,7 @@
               :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
               ><h3>{{ recipe.title }}</h3></NuxtLink
             >
-            <tag-group :tags="recipe.tags"></tag-group>
+            <TagGroup :tags="recipe.tags" />
             <p class="description">{{ recipe.description }}</p>
           </div>
         </div>
