@@ -45,15 +45,14 @@ export default {
   components: { TagGroup },
   methods: {
     thumbs(src) {
-      let thing = this.$img.getSizes(src, {
+      let thumbSizes = this.$img.getSizes(src, {
         sizes: "xs:100vw sm:100vw md:300px lg:300px",
         modifiers: {
           quality: 70,
           height: 200
         }
       });
-      console.log(thing);
-      return thing.src;
+      return thumbSizes.src;
     }
   },
   async asyncData({ $content, params }) {

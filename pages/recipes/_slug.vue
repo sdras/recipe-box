@@ -14,8 +14,11 @@
 
     <div
       class="photo"
-      :style="`background: url(/${recipe.img}) no-repeat center center`"
-      :alt="recipe.title"
+      :style="
+        `background: url(${formatImg(recipe.img)}) no-repeat center center`
+      "
+      :aria-label="recipe.title"
+      role="img"
     ></div>
 
     <nav class="internal-nav">
@@ -48,6 +51,16 @@ export default {
     return { recipe, prev, next };
   },
   methods: {
+    formatImg(src) {
+      const sizes = this.$img.getSizes(src, {
+        sizes: "xs:100vw sm:100vw md:50vw lg:50vw",
+        modifiers: {
+          quality: 70,
+          height: 500
+        }
+      });
+      return sizes.src;
+    },
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
