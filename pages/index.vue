@@ -115,7 +115,7 @@ export default {
 }
 
 h3 {
-  padding: 5px 0 0;
+  margin-top: -15px;
 }
 
 .recipe-content {

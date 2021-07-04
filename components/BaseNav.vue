@@ -85,18 +85,12 @@ ul.site-links {
 
 @media screen and (max-width: 500px) {
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -10px;
-    box-shadow: 0 2px 10px 0 black;
+    padding: 8px;
+    box-shadow: 0 2px 10px 0 #000;
     border: 1px solid #222;
   }
   nav a {
     margin: 0 20px;
-  }
-  nav svg {
-    margin-left: -30px;
   }
 }
 </style>
