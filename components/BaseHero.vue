@@ -3,7 +3,7 @@
     class="masthead"
     role="img"
     :aria-label="alt"
-    :style="`background: url(/${img}) no-repeat center center`"
+    :style="`background: url(${heroImg(recipe.img)}) no-repeat center center`"
   >
     <h1>
       {{ title }}
@@ -30,6 +30,18 @@ export default {
     subtitle: {
       type: String,
       default: "Quick, delicious, healthy meals to keep your brain active."
+    }
+  },
+  methods: {
+    heroImg(src) {
+      let heroSizes = this.$img.getSizes(src, {
+        sizes: "xs:100vw sm:100vw md:100vw lg:100vw",
+        modifiers: {
+          quality: 70,
+          height: "50vh"
+        }
+      });
+      return heroSizes.src;
     }
   }
 };
