@@ -81,18 +81,86 @@ main.single {
   margin-left: 8vw;
 }
 
+h1.recipe-title {
+  font-size: 45px;
+}
+
 .titlearea {
   grid-area: 1 / 1 / 2 / 3;
   padding: 100px 100px 0 0;
 }
 
-.date {
-  text-transform: uppercase;
-}
-
 .photo {
   grid-area: 1 / 3 / 2 / 4;
   background-size: cover !important;
+}
+
+article {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.nuxt-content {
+  width: 50vw;
+  margin-top: -20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.internal-nav {
+  grid-area: 2 / 1 / 3 / 2;
+  border-top: 4px solid black;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  main.single {
+    width: calc(100vw - 10vw);
+    margin-left: 5vw;
+  }
+
+  .titlearea {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 50px 50px 0 0;
+  }
+
+  h1.recipe-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main.single {
+    display: block;
+  }
+
+  .photo {
+    height: 300px;
+  }
+
+  .titlearea {
+    height: auto;
+  }
+
+  .tag-group {
+    margin-bottom: 20px;
+  }
+
+  article {
+    margin-top: 40px;
+  }
+
+  .nuxt-content {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .internal-nav {
+    margin-top: 20px;
+  }
+}
+
+.date {
+  text-transform: uppercase;
 }
 
 .single-details {
@@ -114,45 +182,28 @@ main.single {
   margin-left: -10px;
 }
 
-.internal-nav {
-  grid-area: 2 / 1 / 3 / 2;
-  border-top: 4px solid black;
-  padding-top: 10px;
-}
 .internal-nav h4 {
   padding: 8px;
 }
+
 .internal-nav ul {
   padding-left: 0;
 }
+
 .internal-nav li {
   border-top: 1px solid grey;
   padding: 8px;
   list-style: none;
   font-size: 15px;
 }
+
 .internal-nav a {
   text-decoration: none;
   color: black;
 }
 
-article {
-  grid-area: 2 / 2 / 3 / 4;
-}
-
 .description {
   margin-bottom: 20px;
-}
-
-h1.recipe-title {
-  font-size: 45px;
-}
-
-.nuxt-content {
-  width: 50vw;
-  margin-top: -20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 30px;
 }
 
 .nuxt-content h1 {
@@ -173,6 +224,7 @@ h1.recipe-title {
 .nuxt-content p {
   margin-bottom: 20px;
 }
+
 .link {
   margin-right: 5px;
 }

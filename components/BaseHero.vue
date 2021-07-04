@@ -3,7 +3,7 @@
     class="masthead"
     role="img"
     :aria-label="alt"
-    :style="`background: url(${heroImg(recipe.img)}) no-repeat center center`"
+    :style="`background: url(${heroImg(img)}) no-repeat center center`"
   >
     <h1>
       {{ title }}
