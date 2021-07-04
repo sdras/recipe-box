@@ -11,7 +11,9 @@
           >
             <div
               class="recipe-list-img"
-              :style="`background: url(/${recipe.img}) no-repeat center center`"
+              :style="
+                `background: url(${thumbs(recipe.img)}) no-repeat center center`
+              "
               :aria-label="recipe.title"
               role="img"
             ></div>
@@ -41,6 +43,19 @@ import TagGroup from "../components/global/TagGroup.vue";
 
 export default {
   components: { TagGroup },
+  methods: {
+    thumbs(src) {
+      let thing = this.$img.getSizes(src, {
+        sizes: "xs:100vw sm:100vw md:300px lg:300px",
+        modifiers: {
+          quality: 70,
+          height: 200
+        }
+      });
+      console.log(thing);
+      return thing.src;
+    }
+  },
   async asyncData({ $content, params }) {
     const recipes = await $content("recipes")
       .only([

@@ -28,17 +28,24 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Nuxt Content
   modules: [
     // https://go.nuxtjs.dev/content
     "@nuxt/content"
   ],
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Nuxt Image
+  buildModules: ["@nuxt/image"],
+
+  // Nuxt Image config
+  image: {
+    // Generate images to `/_nuxt/image/file.png`
+    // credit to @bencodezen for the concept: https://github.com/bencodezen/simple-nuxt-image-demo/blob/main/nuxt.config.js
+    staticFilename: "[publicPath]/images/[name]-[hash][ext]"
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},

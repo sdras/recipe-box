@@ -29,7 +29,6 @@
 
     <article>
       <NuxtContent :document="recipe" />
-
       <BasePrevNext :prev="prev" :next="next" />
     </article>
   </main>
