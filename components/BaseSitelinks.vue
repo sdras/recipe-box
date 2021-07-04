@@ -4,9 +4,7 @@
       <nuxt-link to="/about">About</nuxt-link>
     </li>
     <li>
-      <a href="https://github.com/sdras/recipe-box" target="_blank"
-        >GitHub Repo</a
-      >
+      <a href="https://github.com/sdras/recipe-box" target="_blank">Repo</a>
     </li>
   </ul>
 </template>

@@ -5,7 +5,9 @@
       `background: ${bkColor}; margin-top: ${modifiedMargin ? '-40px' : '0'};`
     "
   >
-    <label for="searchbar">Search for your ideal recipe</label>
+    <label for="searchbar"
+      >Search<span class="hide-mobile"> for your ideal recipe</span></label
+    >
     <base-search-input />
   </div>
 </template>
@@ -43,5 +45,11 @@ label {
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 750px) {
+  .hide-mobile {
+    display: none;
+  }
 }
 </style>

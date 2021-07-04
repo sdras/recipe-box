@@ -73,9 +73,19 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
+  .masthead {
+    align-items: flex-end;
+  }
+
   .subtitle {
     text-align: right;
     max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .subtitle {
+    max-width: 200px;
   }
 }
 </style>
