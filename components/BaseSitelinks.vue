@@ -30,4 +30,8 @@ ul.site-links {
   display: inline-block;
   padding-right: 15px;
 }
+
+.site-links li:last-child {
+  padding-right: 5px;
+}
 </style>

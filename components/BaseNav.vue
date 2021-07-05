@@ -85,12 +85,12 @@ ul.site-links {
 
 @media screen and (max-width: 500px) {
   nav {
-    padding: 8px;
+    padding: 10px;
     box-shadow: 0 2px 10px 0 #000;
     border: 1px solid #222;
   }
   nav a {
-    margin: 0 20px;
+    margin: 0;
   }
 }
 </style>

@@ -41,4 +41,10 @@ export default {
   justify-content: space-between;
   width: 400px;
 }
+
+@media screen and (max-width: 700px) {
+  .prevnext {
+    width: calc(100vw - 70px);
+  }
+}
 </style>
