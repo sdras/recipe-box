@@ -5,7 +5,7 @@
       :to="{ name: 'recipes-slug', params: { slug: prev.slug } }"
       class="text-primary font-bold hover:underline"
     >
-      <IconArrow style="transform:scaleX(-1)" /> Previous Recipe
+      <IconArrow style="transform:scaleX(-1)" /> Previous
     </NuxtLink>
     <span v-else>&nbsp;</span>
     <NuxtLink
@@ -13,7 +13,7 @@
       :to="{ name: 'recipes-slug', params: { slug: next.slug } }"
       class="font-bold hover:underline"
     >
-      Next Recipe <IconArrow />
+      Next <IconArrow />
     </NuxtLink>
     <span v-else>&nbsp;</span>
   </div>

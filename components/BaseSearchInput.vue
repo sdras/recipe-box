@@ -46,6 +46,12 @@ input {
   width: 300px;
 }
 
+@media only screen and (max-width: 700px) {
+  input {
+    width: 60vw;
+  }
+}
+
 .search-results {
   padding: 20px;
   line-height: 1.4;
