@@ -39,7 +39,7 @@ export default {
   margin: 20px 0 70px;
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 50vw;
 }
 
 @media screen and (max-width: 700px) {
